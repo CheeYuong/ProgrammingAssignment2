@@ -22,9 +22,7 @@ makeCacheMatrix <- function(x = matrix()) {
         
         get <- function()x
         
-        ## m is an argument for inverse matrix
-        
-        setinv<-function(m)matrixinv <<- m
+        setinv<-function(inverse)matrixinv <<- inverse
         getinv<-function()matrixinv
         
         list(set=set, get=get, 
